@@ -21,14 +21,19 @@
     color: white;
     font-size: 50px;
     text-align: center;
+    margin: 20px 0 50px 0;
 }
 
 .slider-content>ul {
     color: white;
-    text-align: center;
+    text-align: justify;
+    list-style-position: inside;
+    font-size: 20px;
 }
 
-.slider-content>ul>li {}
+.slider-content>ul>li {
+    margin: 20px 0;
+}
 
 .news {
     height: 78px;
@@ -57,10 +62,79 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     right: 0;
 }
 
 .slider-logo-container img {
     width: 60%;
+}
+
+
+/* _______________chat box ________________*/
+
+.chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 90px;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 1000;
+}
+
+.chat-btn {
+    width: 95px;
+    height: 95px;
+    border: 2px solid #2C62D6;
+    border-radius: 15px;
+    margin: 7px 15px;
+    outline: none !important;
+}
+
+.chat-btn-1 {
+    background: white url(../images/icons/icon-man.png) no-repeat center center/95%;
+}
+
+.chat-btn-2 {
+    background: white url(../images/icons/icon-chair.png) no-repeat center center/95%;
+}
+
+.chat-box-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: #2C62D6;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233);
+}
+
+.chat-content {
+    width: 374px;
+    height: 270px;
+    position: absolute;
+    background: white;
+    right: 100%;
+    top: 20px;
+    border: 1px solid #707070a6;
+    border-radius: 20px 0 20px 20px;
+    padding: 10px;
+}
+
+.chat-text {
+    width: 51%;
+    min-width: 51%;
+    border-radius: 25px;
+    padding: 7px 10px;
+}
+
+.text-1 {
+    background-color: #DEDEDE;
+    float: left;
+}
+
+.text-2 {
+    background-color: #B1F4FF;
+    float: right;
 }
