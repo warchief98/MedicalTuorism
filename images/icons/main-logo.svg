@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="251" height="106" viewBox="0 0 251 106">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.138" y1="0.19" x2="1.02" y2="0.696" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#48b0e0"/>
+      <stop offset="0.703" stop-color="#1550d1"/>
+      <stop offset="0.817" stop-color="#2c62d6"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_55" data-name="Group 55" transform="translate(-102 4)">
+    <g id="Group_54" data-name="Group 54" transform="translate(24 9)">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="251" height="93" transform="translate(78)" fill="url(#linear-gradient)"/>
+      <text id="SHEFA" transform="translate(90 51)" fill="#fff" font-size="59" font-family="SegoeUI, Segoe UI" letter-spacing="0.014em"><tspan x="0" y="0">SHEFA</tspan></text>
+    </g>
+    <text id="medical_agency" data-name="medical agency" transform="translate(117 86)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" letter-spacing="0.3em"><tspan x="0" y="0">medical agency</tspan></text>
+  </g>
+</svg>
