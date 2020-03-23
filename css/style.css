@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 55px;
+    bottom: 0;
     right: 0;
 }
 
@@ -75,11 +75,12 @@
 
 .chat-box {
     position: fixed;
-    bottom: 90px;
+    top: 55vh;
     right: 90px;
     display: flex;
     flex-flow: column nowrap;
     z-index: 1000;
+    opacity: 20%;
 }
 
 .chat-btn {
@@ -137,4 +138,21 @@
 .text-2 {
     background-color: #B1F4FF;
     float: right;
+}
+
+
+/* page-1 block-1 */
+
+.promotion-1 {
+    text-align: right;
+}
+
+.promotion-1>h3 {
+    color: #1856D2;
+}
+
+.start-part span {
+    width: 30px;
+    height: 30px;
+    background: url(../images/icons/icon-tik.png) no-repeat center center/contain;
 }
