@@ -82,6 +82,10 @@
     z-index: 1000;
     opacity: 20%;
 }
+.chat-box-increaseTop{
+    top: 65vh !important;
+    opacity: 1;
+}
 
 .chat-btn {
     width: 95px;
