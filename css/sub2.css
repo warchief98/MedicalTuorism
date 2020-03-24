@@ -1,0 +1,131 @@
+.main-head{
+  padding: 30px 10px;
+}
+.main-head-title {
+  color: #2c62d6;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.main-head-searchBox {
+  width: 525px;
+  height: 65px;
+  border: 1px solid#2c62d6;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 4%;
+  justify-content: flex-end;
+}
+.main-head-input {
+  width: 85%;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.main-subMain {
+  padding-top: 180px;
+}
+.main-subMain-boxContent {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-subMain-box {
+  /* background: url(../images/assets/box-border.png) no-repeat center center /contain; */
+  width: 80%;
+  height: 278px;
+  border: 4px solid #2c62d6;
+  margin-bottom: 120px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.main-subMain-SpecializeBox{
+  justify-content: center !important;
+}
+.main-subMain-img {
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  padding: 15px;
+  background: white;
+  border: 4px solid transparent;
+  border-left: 4px solid #2c62d6;
+  transform: rotate(-43deg);
+  overflow: hidden;
+  position: absolute;
+  right: -115px;
+  top: -106px;
+}
+.main-subMain-SpecializeImg{
+  top: 163px !important;
+  border: 4px solid transparent !important;
+  border-right: 4px solid #2c62d6 !important;
+  transform: rotate(-137deg);
+}
+.main-subMain-img img{
+  width: 100%;
+  transform: rotate(45deg);
+
+}
+.main-subMain-SpecializeImg img{
+  width: 100%;
+  transform: rotate(137deg);
+}
+.subMain-title {
+  font-size: 30px;
+  padding: 0 8px;
+  margin: 0;
+  width: 75%;
+}
+.subMain-content-box {
+  width: 75%;
+}
+.subMain-content {
+  padding: 0 8px;
+  margin: 0;
+  font-size: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  
+  .main-head-searchBox {
+    width: 100%;
+  }
+  .main-subMain-box {
+    height: auto;
+    width: 100%;
+    padding: 100px 0 30px;
+  }
+  .subMain-title {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  .subMain-content-box {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .main-subMain-img {
+    transform: translateX(50%) rotate(0deg);
+    border: 4px solid #2c62d6;
+    right: 50%;
+
+  }
+  .main-subMain-img img {
+    transform:rotate(0deg);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .main-head{
+    padding: 50px 120px;
+  }
+  .main-subMain-boxContent {
+    justify-content: center;
+  }
+  .main-subMain-box {
+    width: 60%;
+  }
+}
