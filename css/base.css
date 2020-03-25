@@ -132,21 +132,57 @@ body {
     font-family: IRANSans !important;
 }
 
-.fz-20 {
-    font-size: 20px;
-}
-
 .fz-30 {
     font-size: 30px;
-}
-
-.fz-40 {
-    font-size: 40px;
 }
 
 .fz-50 {
     font-size: 50px;
 }
-.b-ra-20p{
+
+.b-ra-20p {
     border-radius: 20px;
+}
+
+
+/* ___________________________________media ________________ */
+
+@media screen and (min-width:0px) {
+    .fz-20 {
+        font-size: 10px;
+    }
+    .fz-40 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:375px) {}
+
+@media screen and (min-width:425px) {}
+
+@media screen and (min-width:768px) {
+    .fz-20 {
+        font-size: 15px;
+    }
+    .fz-40 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .fz-20 {
+        font-size: 18px;
+    }
+    .fz-40 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .fz-20 {
+        font-size: 20px;
+    }
+    .fz-40 {
+        font-size: 40px;
+    }
 }
