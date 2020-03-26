@@ -18,7 +18,7 @@
 
 <body>
     <div class="main-wrapper">
-        <div class="header p-0 border border-danger">
+        <div class="header p-0">
             <div class="container p-0">
                 <div class="top-head m-0 p-0 row align-items-center">
                     <div class="col-12 col-md-6">
@@ -185,7 +185,7 @@
         </div>
 
         <div class="block-4">
-            <div class="d-flex flex-column justify-content-around" style="height: 100%;">
+            <div>
                 <div class="row justify-content-center">
                     <p class="fz-20 col-12 col-md10 col-xl-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
                         کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
@@ -200,22 +200,22 @@
         <div class="block-5">
             <div class="container-fluid">
                 <div class="row my-5">
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 m-auto">
+                    <div class="col-12 col-md-6 col-xl-3 m-auto">
                         <div class="mini-box mini-box-1">
                             <h3 class="fz-50">اصفهان</h3>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-xl-3">
                         <div class="mini-box mini-box-2">
                             <h3 class="fz-50">تهران</h3>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-xl-3">
                         <div class="mini-box mini-box-3">
                             <h3 class="fz-50">شیراز</h3>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-xl-3">
                         <div class="mini-box mini-box-4">
                             <h3 class="fz-50">مشهد</h3>
                         </div>
@@ -232,6 +232,39 @@
                 </figure>
                 <p class="fz-40">کتابهای زیادی در شصت و سه درصد گذشته سطرآنچنان که لازم است</p>
             </div>
+        </div>
+
+        <div class="block-7">
+
+            <div class="navigator-btn-container">
+                <button class="left-btn"></button>
+
+                <button class="right-btn"></button>
+
+
+                <div class="bot-slider-container">
+                    <div class="slide-roll">
+                        <div class="mini-slide">
+                            <img src="../images/icons/mini-slide-icon1.png" alt="">
+                        </div>
+                        <div class="mini-slide">
+                            <img src="../images/icons/mini-slide-icon2.png" alt="">
+                        </div>
+                        <div class="mini-slide">
+                            <img src="../images/icons/mini-slide-icon3.png" alt="">
+                        </div>
+                        <div class="mini-slide">
+                            <img src="../images/icons/mini-slide-icon4.png" alt="">
+                        </div>
+
+                        <div class="mini-slide">
+                            <img src="../images/icons/mini-slide-icon4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 
@@ -258,6 +291,31 @@
                 countSlide = 0;
                 findNextSlider();
             }
+        }
+        //        _____________________________________________JS for slider bot
+        _c = 0;
+        $(document).ready(function() {
+            _licount = $('.mini-slide').length;
+            _outerwidth = $('.mini-slide').outerWidth();
+            console.log(_licount, _outerwidth)
+            $('.slide-roll').css('width', (_licount * _outerwidth) + (_licount * 50))
+        })
+
+
+        setInterval(slider1, 4000)
+
+
+
+        function slider1() {
+
+        }
+
+        function rightClick() {
+
+        }
+
+        function leftClick() {
+
         }
     </script>
 
