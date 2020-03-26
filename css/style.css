@@ -1,5 +1,5 @@
 .linear-color {
-    background-image: linear-gradient(100deg, #48B0E0 20%, #1550D1 50%, #2C62D6 75%, #2C62D6);
+    background-image: linear-gradient(100deg, #48b0e0 20%, #1550d1 50%, #2c62d6 75%, #2c62d6);
 }
 
 .main-slider {
@@ -8,7 +8,7 @@
 
 .slider-content {
     position: absolute;
-    /* width: 425px;
+    /* width: 425px;blo
     height: 425px; */
     background-color: rgba(0, 0, 0, 0.5);
     top: 50%;
@@ -85,7 +85,7 @@
 .chat-btn {
     width: 95px;
     height: 95px;
-    border: 2px solid #2C62D6;
+    border: 2px solid #2c62d6;
     border-radius: 15px;
     margin: 7px 15px;
     outline: none !important;
@@ -105,7 +105,7 @@
     right: 0;
     width: 10px;
     height: 100%;
-    background: #2C62D6;
+    background: #2c62d6;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233);
 }
@@ -130,12 +130,12 @@
 }
 
 .text-1 {
-    background-color: #DEDEDE;
+    background-color: #dedede;
     float: left;
 }
 
 .text-2 {
-    background-color: #B1F4FF;
+    background-color: #b1f4ff;
     float: right;
 }
 
@@ -279,7 +279,7 @@
 }
 
 .promotion-1>h3 {
-    color: #1856D2;
+    color: #1856d2;
     margin: 20px 0;
 }
 
@@ -573,6 +573,71 @@
     .main-contact span img {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 787px) {
+    .main-book {
+        background: white;
+        padding: 0px 0 50px;
+    }
+    .main-linkBox {
+        width: 90%;
+        padding: 50px 5px;
+    }
+    .main-contact {
+        width: 90%;
+        margin-top: 50px;
+    }
+    .main-contact span {
+        width: 20%;
+    }
+    .main-contact span img {
+        width: 100%;
+    }
+}
+
+
+/* ______________________block-3_________________________ */
+
+.block-3 {
+    padding: 80px 0;
+}
+
+.main-blockContainer {
+    background: url(../images/assets/Group\ 30.png) no-repeat 20% center/contain, url(../images/assets/pattern-2-3.png) no-repeat 80% center/400px 400px;
+}
+
+.main-subMain-block-boxContent {
+    background: url(../images/assets/page1-part3-bg.png) no-repeat center center / cover;
+    box-shadow: 1px 1px 35px 8px rgba(0, 0, 0, 0.5);
+    padding: 100px 50px 150px !important;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.main-subMain-block-boxContent-bgc {
+    width: 90%;
+    height: 90%;
+    background: rgba(103, 182, 202, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box1 {
+    border-left: 7px solid #7ba479 !important;
+}
+
+.box2 {
+    border-left: 7px solid #a179a4 !important;
+}
+
+.box3 {
+    border-left: 7px solid #c2b3b3 !important;
 }
 
 
