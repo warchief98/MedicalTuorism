@@ -295,6 +295,16 @@
         width: 100%;
     }
 }
+/* ______________________block-3_________________________ */
+.block-3{
+}
+.main-blockContainer{
+    background: url(../images/assets/WhatsApp\ Image\ 2020-03-25\ at\ 17.14.20.jpeg) no-repeat center center /cover;
+}
+.main-subMain-block-boxContent {
+   background: rgba(103, 182, 202, 0.15);
+   padding: 50px;
+}
 
 
 /* ___________________________________media ________________ */

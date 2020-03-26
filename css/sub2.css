@@ -42,6 +42,12 @@
   align-items: flex-end;
   justify-content: space-around;
 }
+.main-subMain-box-bgc{
+  background: #19C9F5;
+  width: 30% !important;
+  border: none;
+  border-radius: 0;
+}
 .main-subMain-SpecializeBox{
   justify-content: center !important;
 }
