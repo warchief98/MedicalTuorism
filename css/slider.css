@@ -1,7 +1,33 @@
 .slider-container {
     width: 100%;
+    height: 70vh;
+    position: relative;
+    min-height: 500px;
+    overflow-x: hidden;
 }
 
-.slide>img {
+.slide {
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.slide-1 {
+    background: url("../images/assets/slide-1.jpg") no-repeat center center/cover;
+}
+
+.slide-2 {
+    background: url("../images/assets/slide-2.jpg") no-repeat center center/cover;
+}
+
+.slide-3 {
+    background: url("../images/assets/slide-1.jpg") no-repeat center center/cover;
+}
+
+.slide-4 {
+    background: url("../images/assets/slide-2.jpg") no-repeat center center/cover;
 }
