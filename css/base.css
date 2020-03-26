@@ -128,6 +128,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden !important;
+}
+
 body {
     font-family: IRANSans !important;
 }

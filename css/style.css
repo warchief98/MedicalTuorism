@@ -176,7 +176,7 @@
     padding: 7px 32px;
     border: 2px solid white !important;
     background: transparent !important;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 .hero-content {
@@ -223,6 +223,7 @@
     background: url(../images/assets/page1-part4-bg.jpg) no-repeat center center/cover;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .block-4::after {
@@ -233,6 +234,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
 }
 
 .promotion-1 {
@@ -257,10 +259,11 @@
 }
 
 .start-part>li {
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 30px 0;
     border-bottom: 2px solid #707070;
     text-align: right;
 }
@@ -271,6 +274,14 @@
     height: 30px;
     background: url(../images/icons/icon-tik.png) no-repeat center center/contain;
     margin: 0 10px;
+}
+
+.start-btn {
+    width: max-content;
+    padding: 7px 50px;
+    color: white;
+    border: none;
+    border-radius: 20px;
 }
 
 
@@ -362,6 +373,74 @@
 
 .main-medicalTools img {
     width: 100%;
+}
+
+
+/* block-5 */
+
+.block-5 {}
+
+.block-5>div>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-box {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.mini-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mini-box h3 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    color: white;
+    border-bottom: 4px solid white;
+    padding: 0 0 10px 30px;
+    z-index: 5;
+}
+
+.mini-box-1 {
+    background: url(../images/assets/isfahan.png) no-repeat center center/cover;
+}
+
+.mini-box-2 {
+    background: url(../images/assets/Tehran.png) no-repeat center center/cover;
+}
+
+.mini-box-3 {
+    background: url(../images/assets/shiraz.png) no-repeat center center/cover;
+}
+
+.mini-box-4 {
+    background: url(../images/assets/mashhad.png) no-repeat center center/cover;
+}
+
+
+/* block-6 */
+
+.block-6 {}
+
+.block-6 h4 {
+    color: rgba(0, 0, 0, 0.301);
+}
+
+.block-6 p {
+    color: rgba(42, 120, 215, 0.75);
+    font-weight: bold;
 }
 
 @media screen and (max-width:787px) {

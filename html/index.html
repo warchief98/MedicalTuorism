@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
 
+    <script src="../js/jquery.js"></script>
+
 </head>
 
 <body>
@@ -56,12 +58,27 @@
                     <p class="fz-20">برای مشاهده آخرین وبینار کلیک کنید : تاثیر ویروس کرونا بر گردشگری پزشکی</p>
                 </a>
             </div>
-
+            <!-- ******************************* -->
             <div class="slider-container">
-                <div class="slide slide1">
-                    <img src="../images/assets/slide-1.jpg" alt="">
+                <div class="slide slide-1">
+
                 </div>
+
+                <div class="slide slide-2">
+
+                </div>
+
+                <div class="slide slide-3">
+
+                </div>
+
+                <div class="slide slide-4">
+
+                </div>
+
             </div>
+
+            <!-- ********************************* -->
             <div class="slider-logo-container linear-color">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
@@ -132,8 +149,9 @@
                                 سامانه ای سریع و ایمن برای دستیابی به بهترین
                                 <span></span>
                             </li class="fz-20">
-                            <li>
-                                <button class="linear-color">شروع</button>
+                            <li style="border: none;justify-content: space-evenly;">
+                                آیا علاقه مندید؟
+                                <button class="linear-color start-btn fz-20">شروع</button>
                             </li>
                         </ul>
 
@@ -149,7 +167,7 @@
                     <h3 class="fz-50 col-12 col-lg-10">مجموعه ای از پیشرفته ترین مراکز درمانی و اقامتی</h3>
                     <p class="fz-30 col-10 col-lg-8">سامانه ای سریع و ایمن برای دستیابی به بهترین و تخصصی ترین مراکز درمانی همراه با خدمات تخصصی بیمار و همراه ، تجربه ای لذت بخش از درمان و گردشگری</p>
                     <div class="col-12 text-center">
-                        <button class="btn-info">بیشتر بدانید</button>
+                        <button class="btn-info fz-30">بیشتر بدانید</button>
                     </div>
                 </div>
             </div>
@@ -174,11 +192,75 @@
                     </p>
                 </div>
                 <div class="row justify-content-center">
-                    <button class="btn-info">بیشتر بدانید</button>
+                    <button class="btn-info fz-30">بیشتر بدانید</button>
                 </div>
             </div>
         </div>
+
+        <div class="block-5">
+            <div class="container-fluid">
+                <div class="row my-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 m-auto">
+                        <div class="mini-box mini-box-1">
+                            <h3 class="fz-50">اصفهان</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="mini-box mini-box-2">
+                            <h3 class="fz-50">تهران</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="mini-box mini-box-3">
+                            <h3 class="fz-50">شیراز</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="mini-box mini-box-4">
+                            <h3 class="fz-50">مشهد</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-6">
+            <div class="container d-flex flex-column align-items-center">
+                <h4 class="fz-30"> مجله در ستون و سطرآنچنان که لازم است</h4>
+                <figure>
+                    <img src="../images/icons/main-logo.svg" alt="">
+                </figure>
+                <p class="fz-40">کتابهای زیادی در شصت و سه درصد گذشته سطرآنچنان که لازم است</p>
+            </div>
+        </div>
     </div>
+
+    <script>
+        //        _____________________________________________JS for slider main
+        var countSlide = 0;
+        setInterval(findNextSlider, 6000);
+
+        var __l = parseInt($('.slide').length);
+
+        findNextSlider();
+
+        function findNextSlider() {
+
+            if (countSlide < __l) {
+                $('.slide').css('opacity', '0');
+                $('.slide').eq(countSlide).css('opacity', '1');
+
+                $('.slide-content').removeClass('slide-content-move');
+                $('.slide-content').eq(countSlide).addClass('slide-content-move');
+                countSlide++;
+            } else if (countSlide == __l) //make counter 0 to start over dynamically
+            {
+                countSlide = 0;
+                findNextSlider();
+            }
+        }
+    </script>
+
 </body>
 
 </html>
