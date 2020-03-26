@@ -144,6 +144,7 @@
 
 .block-1 {
     background: url(../images/assets/page-1-p1-bg.png) no-repeat local center center/90%;
+    padding: 220px 0;
 }
 
 .block-2 {
@@ -344,19 +345,16 @@
 
 .main-linkBox-title {
     color: #2c62d6;
-    font-size: 40px;
     margin-bottom: 40px;
 }
 
 .main-linkBox-content {
     color: rgba(0, 0, 0, 0.3);
     font-weight: 400;
-    font-size: 30px;
 }
 
 .main-linkBox-contentLink {
     color: #ff6868;
-    font-size: 20px;
     outline: none;
     cursor: pointer;
 }
@@ -385,7 +383,6 @@
 }
 
 .main-linkBox-call {
-    font-size: 30px;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -568,7 +565,7 @@
         margin-top: 50px;
     }
     .main-contact span {
-        width: 20%;
+        width: 15%;
     }
     .main-contact span img {
         width: 100%;
@@ -589,7 +586,7 @@
         margin-top: 50px;
     }
     .main-contact span {
-        width: 20%;
+        width: 12%;
     }
     .main-contact span img {
         width: 100%;
@@ -610,7 +607,7 @@
 .main-subMain-block-boxContent {
     background: url(../images/assets/page1-part3-bg.png) no-repeat center center / cover;
     box-shadow: 1px 1px 35px 8px rgba(0, 0, 0, 0.5);
-    padding: 100px 50px 150px !important;
+    padding: 100px 60px 150px !important;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -678,6 +675,13 @@
     }
 }
 
+@media screen and (max-width:1023px) {
+    .block-1 {
+        background: url(../images/assets/page-1-p1-bg.png) no-repeat local center center/145%;
+        padding: 50px 0;
+    }
+}
+
 @media screen and (min-width:1024px) {
     .slider-content {
         width: 280px;
@@ -697,6 +701,10 @@
     }
     .mini-slide {
         margin: 0 25px 0 0;
+    }
+    .block-1 {
+        background: url(../images/assets/page-1-p1-bg.png) no-repeat local center center/125%;
+        padding: 100px 0;
     }
 }
 
@@ -718,5 +726,9 @@
     }
     .mini-slide {
         margin: 0 50px 0 0;
+    }
+    .block-1 {
+        background: url(../images/assets/page-1-p1-bg.png) no-repeat local center center/90%;
+        padding: 100px 0;
     }
 }
