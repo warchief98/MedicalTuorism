@@ -17,6 +17,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+#menu-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none !important;
+    background: url(../images/icons/menu-btn.png) no-repeat center center/80%;
+    border: 1px solid transparent;
+    transition: 0.2s;
+    padding: 13px;
+}
+
+#menu-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.712);
 }
 
 .head-line {
@@ -99,6 +120,12 @@
         height: 0;
         overflow: hidden;
     }
+    .main-nav {
+        flex-direction: column;
+    }
+    #menu-btn {
+        display: block;
+    }
 }
 
 @media screen and (min-width:375px) {}
@@ -113,11 +140,17 @@
     .top-nav {
         overflow: unset;
     }
+    .main-nav {
+        flex-direction: row;
+    }
     .main-logo-container {
         text-align: left;
     }
     .main-nav>li>a {
         font-size: 14px;
+    }
+    #menu-btn {
+        display: none;
     }
 }
 

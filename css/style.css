@@ -148,7 +148,7 @@
 }
 
 .block-2 {
-    height: 70vh;
+    height: 100vh;
     background: url(../images/assets/page1-block2-bg.jpg) no-repeat local center center/cover;
     position: relative;
     text-align: center;
@@ -210,6 +210,7 @@
     z-index: 10;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .block2-box {
@@ -279,9 +280,17 @@
     text-align: right;
 }
 
+.promotion-1>h6 {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .promotion-1>h3 {
     color: #1856d2;
-    margin: 20px 0;
+    margin: 20px 0 50px 0;
+}
+
+.promotion-1>p {
+    padding-left: 30%;
 }
 
 .start-part {
@@ -293,7 +302,6 @@
     padding: 30px 15px;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.411);
-    margin: 5vw 0;
 }
 
 .start-part>li {
@@ -333,13 +341,13 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    background: url(../images/assets/pattern-combo-1.png) no-repeat left 24%/50% 100%, url(../images/assets/pattern-2-3.png) no-repeat 90% 30%/424px 483px;
+    background: url(../images/assets/pattern-combo-1.png) no-repeat left top/60% auto, url(../images/assets/pattern-2-3.png) no-repeat 90% 30%/424px 483px;
 }
 
 .main-linkBox {
     background: #eaf7f8;
     padding: 50px 80px;
-    width: 60%;
+    width: 54%;
     position: relative;
 }
 
@@ -448,8 +456,8 @@
     top: 50%;
     right: 10%;
     color: white;
-    border-bottom: 4px solid white;
-    padding: 0 0 10px 30px;
+    border-bottom: 3px solid #ffffff7a;
+    padding: 0 0 10px 35%;
     z-index: 5;
 }
 
@@ -572,27 +580,6 @@
     }
 }
 
-@media screen and (max-width: 787px) {
-    .main-book {
-        background: white;
-        padding: 0px 0 50px;
-    }
-    .main-linkBox {
-        width: 90%;
-        padding: 50px 5px;
-    }
-    .main-contact {
-        width: 90%;
-        margin-top: 50px;
-    }
-    .main-contact span {
-        width: 12%;
-    }
-    .main-contact span img {
-        width: 100%;
-    }
-}
-
 
 /* ______________________block-3_________________________ */
 
@@ -680,6 +667,15 @@
         background: url(../images/assets/page-1-p1-bg.png) no-repeat local center center/145%;
         padding: 50px 0;
     }
+    .main-linkBox-border {
+        margin: 5px 0 10px;
+    }
+    .main-linkBox {
+        padding: 20px 20px;
+    }
+    .main-book {
+        background: url(../images/assets/pattern-combo-1.png) no-repeat -20% center/70% auto, url(../images/assets/pattern-2-3.png) no-repeat 90% 30%/424px 483px;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -706,12 +702,15 @@
         background: url(../images/assets/page-1-p1-bg.png) no-repeat local center center/125%;
         padding: 100px 0;
     }
+    .main-contact span {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width:1440px) {
     .slider-content {
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 380px;
         transform: translateY(-65%);
     }
     .slider-content>h2 {
@@ -728,7 +727,7 @@
         margin: 0 50px 0 0;
     }
     .block-1 {
-        background: url(../images/assets/page-1-p1-bg.png) no-repeat local center center/90%;
+        background: url(../images/assets/page-1-p1-bg.png) no-repeat local -40% center/90%;
         padding: 100px 0;
     }
 }

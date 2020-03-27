@@ -108,7 +108,6 @@
 }
 
 .subMain-title {
-    font-size: 30px;
     padding: 0 8px;
     margin: 0;
     width: 75%;
@@ -130,7 +129,6 @@
 .subMain-content {
     padding: 0 8px;
     margin: 0;
-    font-size: 20px;
     width: 100%;
 }
 
@@ -144,13 +142,13 @@
     .main-subMain-box {
         height: auto;
         width: 100%;
-        padding: 100px 0 30px;
+        padding: 50px 0 30px;
+        margin-bottom: 70px;
     }
     .subMain-title {
         width: 100%;
         margin-bottom: 40px;
         padding: 0 20px;
-        font-size: 25px;
     }
     .subMain-content-box {
         width: 100%;
@@ -164,12 +162,22 @@
         height: 100px;
     }
     .main-subMain-img {
-        transform: translateX(50%) rotate(0deg);
+        transform: translate(50%, 50%) rotate(0deg);
         border: 4px solid #2c62d6 !important;
         right: 50%;
+        width: 100px;
+        height: 100px;
+        padding: 0;
+    }
+    .main-subMain-SpecializeImg {
+        transform: translate(50%, -60%) rotate(0deg);
     }
     .main-subMain-img img {
         transform: rotate(0deg);
+    }
+    .main-subMain-img-border-none {
+        width: 80px;
+        height: 80px;
     }
 }
 

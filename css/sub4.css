@@ -1,51 +1,99 @@
-.Specialized-centers{
+.Specialized-centers {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.Specialized-centers-title{
+
+.Specialized-centers-title {
     color: hsla(0, 0%, 0%, 0.3);
     font-weight: normal;
-    font-size: 40px;
-    margin:50px 0 150px;
+    margin: 50px 0 100px;
 }
-.Specialized-centers-box{
+
+.Specialized-centers-box {
     width: 50%;
     position: relative;
     margin: 0 0 100px;
 }
-.Specialized-centers-box img{
+
+.Specialized-centers-box img {
     width: 100%;
 }
-.Specialized-centers-boxRate{
-    width: 40%;
+
+.Specialized-centers-boxRate {
+    width: 45%;
     position: absolute;
     top: 50%;
     left: -45%;
-    transform: translate(50% , -50%);
-    background:white url(../images/assets/pattern-2-3.png) no-repeat 100% 100% /50% 50%;
+    transform: translate(50%, -50%);
+    background: white url(../images/assets/pattern-2-3.png) no-repeat 100% 100% /50% 50%;
     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px 30px;
 }
-.Specialized-centers-boxRate-title{
-    font-size: 40px;
+
+.Specialized-centers-boxRate-title {
     color: #2c62d6;
     margin: 20px 0;
 }
-.Specialized-centers-boxRate-contentBox{
-    width: 60%;
+
+.Specialized-centers-boxRate-contentBox {
+    width: 100%;
     text-align: justify;
 }
-.Specialized-centers-boxRate-content{
-    font-size: 21px;
-}
-.Specialized-centers-boxRate-rate{
+
+.Specialized-centers-boxRate-rate {
     width: 100%;
 }
-.Specialized-centers-boxRate-rate img{
-    width: 20%;
+
+.Specialized-centers-boxRate-rate img {
+    width: 25px;
+}
+
+
+/*-----------------media-----------------------*/
+
+@media screen and (min-width:0px) {
+    .Specialized-centers-boxRate {
+        width: 100%;
+        top: 79%;
+        left: -44%;
+        padding: 10px;
+    }
+    .Specialized-centers-box {
+        width: 84%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .Specialized-centers-boxRate {
+        width: 60%;
+        left: -35%;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .Specialized-centers-boxRate {
+        width: 60%;
+        padding: 10px 20px;
+        top: 50%;
+        left: -45%;
+    }
+    .Specialized-centers-boxRate-contentBox {
+        width: 70%;
+    }
+    .Specialized-centers-box {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .Specialized-centers-boxRate {
+        width: 45%;
+        padding: 20px 30px;
+    }
 }
