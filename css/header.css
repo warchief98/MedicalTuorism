@@ -114,7 +114,7 @@
 
 @media screen and (min-width:0px) {
     .main-logo-container {
-        text-align: left;
+        text-align: center;
     }
     .top-nav {
         height: 0;
@@ -139,7 +139,6 @@
     }
     .top-nav {
         overflow: unset;
-        height: 50px;
     }
     .main-nav {
         flex-direction: row;
