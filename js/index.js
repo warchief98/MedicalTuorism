@@ -46,3 +46,15 @@
      function leftClick() {
 
      }
+     // _____________________________________menu btn
+     var btnCount = 1;
+     $('#menu-btn').click(function() {
+         if (btnCount) {
+             $('.top-nav').css('height', '100%')
+             btnCount--
+         } else {
+             $('.top-nav').css('height', '0')
+             btnCount++
+         }
+
+     })
