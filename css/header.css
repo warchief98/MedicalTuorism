@@ -91,7 +91,7 @@
     height: 30px;
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 20px;
     transform: translateY(-50%);
     z-index: 9;
     border: none;

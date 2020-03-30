@@ -48,6 +48,13 @@
      }
      //  __________________________________lang btn
      $('.top-lang').click(function() {
-         $('.lang-box').toggle(200)
-
+         $('.lang-box').toggle(200);
+     })
+     $('.inp-search').focus(function() {
+         $('.inp-search').css("box-shadow", "1px 1px 5px 2px rgba(0, 0, 0, 0.5)")
+         $('.top-search').css({ width: 25, height: 25 })
+     })
+     $('.top-search').click(function() {
+         $('.inp-search').css("box-shadow", "0px 0px 0px 0px rgba(0, 0, 0, 0.5)")
+         $('.top-search').css({ width: 30, height: 30 })
      })
