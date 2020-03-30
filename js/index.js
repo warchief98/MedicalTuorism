@@ -46,3 +46,8 @@
      function leftClick() {
 
      }
+     //  __________________________________lang btn
+     $('.top-lang').click(function() {
+         $('.lang-box').toggle(200)
+
+     })
